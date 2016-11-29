@@ -1,5 +1,3 @@
-//package minesweeper;
-
 import java.util.Random;
 
 /** Models a minesweeper grid.
@@ -7,6 +5,12 @@ import java.util.Random;
  * @author Prathyusha */
 
 public class Grid {
+    private String [][] _grid;
+    private int _length;
+    private int _numMines;
+    private String MINE = "*";
+    private String SAFE = "0";
+
     public Grid (int length, int numMines) {
         _grid = new String[length][length];
         _length = length;
@@ -44,11 +48,4 @@ public class Grid {
     public boolean isMine(int r, int c) {
         return _grid.equals(MINE);
     }
-
-    private String [][] _grid;
-    private int _length;
-    private int _numMines;
-
-    private String MINE = "*";
-    private String SAFE = "0";
 }
