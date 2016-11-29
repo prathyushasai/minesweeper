@@ -1,17 +1,19 @@
 import java.util.Random;
 
-/** Models a minesweeper grid.
+/**
+ * Models a minesweeper grid.
  *
- * @author Prathyusha */
+ * @author Prathyusha
+ */
 
 public class Grid {
-    private String [][] _grid;
+    private String[][] _grid;
     private int _length;
     private int _numMines;
     private String MINE = "*";
     private String SAFE = "0";
 
-    public Grid (int length, int numMines) {
+    public Grid(int length, int numMines) {
         _grid = new String[length][length];
         _length = length;
         _numMines = numMines;
